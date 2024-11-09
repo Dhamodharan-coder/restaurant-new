@@ -92,7 +92,7 @@ const Mainpage = ({ dishes }) => {
           animate={{ scale:(1),  opacity: 1 }}
           transition={{ duration: 0.5, ease: 'easeIn' }}
         >
-          <img src={dishes[next].image} className='h-1/2 sm:h-1/2 md:h-1/2 big-image' />
+          <img src={dishes[next].image} className='h-1/2 sm:h-1/2 md:h-1/2 big-image mt-14 sm:m-0' />
         </motion.div>
       </div>
     </div>
