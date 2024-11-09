@@ -11,7 +11,7 @@ const Secondpage = ({ menu }) => {
   useEffect(() => {
     const response = menu.filter((e) => e.category === filterbutton);
     setFilter(response);
-  }, [filterbutton, menu]);
+  }, [filterbutton,filter,menu]);
 
   const inViewRef = React.useRef(null);
   const isInView = useInView(inViewRef, { once: true });
