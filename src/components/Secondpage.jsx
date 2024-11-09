@@ -58,7 +58,7 @@ const Secondpage = ({ menu }) => {
             {["NonVeg", "Veg", "SeaFood"].map((category) => (
               <div
                 key={category}
-                className={`py-2 px-4 m-2 w-fit text-center rounded-xl cursor-pointer bg-white shadow-black border-2 border-slate-300 ${
+                className={`py-2 px-4 m-2 w-fit text-center rounded-xl cursor-pointer shadow-black border-2 border-slate-300 ${
                   filterbutton === category ? "bg-slate-900 text-white" : ""
                 }`}
                 onClick={() => setFilterButton(category)}
@@ -72,7 +72,7 @@ const Secondpage = ({ menu }) => {
             {["Nonveg", "Veg"].map((category) => (
               <div
                 key={category}
-                className={`py-2 px-4 m-2 w-fit text-center rounded-xl cursor-pointer bg-white shadow-black border-2 border-slate-300 ${
+                className={`py-2 px-4 m-2 w-fit text-center rounded-xl cursor-pointer shadow-black border-2 border-slate-300 ${
                   filterbutton === category ? "bg-slate-900 text-white" : ""
                 }`}
                 onClick={() => setFilterButton(category)}
@@ -84,7 +84,7 @@ const Secondpage = ({ menu }) => {
         ) : value === "Meals" ? (
           <div className="flex w-full justify-center items-center overflow-x-auto scrollbar-hide my-4">
             <div
-              className={`py-2 px-4 m-2 w-fit text-center rounded-xl cursor-pointer bg-white shadow-black border-2 border-slate-300 ${
+              className={`py-2 px-4 m-2 w-fit text-center rounded-xl cursor-pointer shadow-black border-2 border-slate-300 ${
                 filterbutton === "meals" ? "bg-slate-900 text-white" : ""
               }`}
               onClick={() => setFilterButton("meals")}
@@ -97,7 +97,7 @@ const Secondpage = ({ menu }) => {
             {["kothu parota", "eggs to order"].map((category) => (
               <div
                 key={category}
-                className={`py-2 px-4 m-2 w-fit text-center rounded-xl cursor-pointer bg-white shadow-black border-2 border-slate-300 ${
+                className={`py-2 px-4 m-2 w-fit text-center rounded-xl cursor-pointer shadow-black border-2 border-slate-300 ${
                   filterbutton === category ? "bg-slate-900 text-white" : ""
                 }`}
                 onClick={() => setFilterButton(category)}
