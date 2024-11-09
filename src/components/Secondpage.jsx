@@ -44,7 +44,7 @@ const Secondpage = ({ menu }) => {
             {["rice", "indianbreads", "friedrice", "non-veg", "biriyani", "noodles", "veg", "seafood", "egg"].map((category) => (
               <div
                 key={category}
-                className={`py-2 px-4 m-2 w-fit text-center rounded-xl cursor-pointer bg-white shadow-black border-2 border-slate-300 ${
+                className={`py-2 px-4 m-2 w-fit text-center rounded-xl cursor-pointer shadow-black border-2 border-slate-300 ${
                   filterbutton === category ? "bg-slate-900 text-white" : ""
                 }`}
                 onClick={() => setFilterButton(category)}
