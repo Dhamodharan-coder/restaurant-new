@@ -113,7 +113,7 @@ const Secondpage = ({ menu }) => {
         ref={inViewRef}
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 1 }}
         className="flex flex-wrap justify-center gap-6 m-12"
       >
         {filter.map((e, index) => (
@@ -121,7 +121,7 @@ const Secondpage = ({ menu }) => {
             key={index}
             className="overflow-hidden rounded-3xl"
             initial={{ opacity: 0, scale: 0.9 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            animate={ { opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 * index, duration: 0.4 }}
           >
             <div className="rounded-3xl w-80 h-70 sm:w-60 sm:h-80 overflow-hidden relative drop-shadow-2xl">

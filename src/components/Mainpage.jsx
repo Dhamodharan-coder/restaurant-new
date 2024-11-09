@@ -43,7 +43,7 @@ const Mainpage = ({ dishes }) => {
             ref={descriptionRef}
             className='text-lg my-6 text-slate-700'
             initial={{ x: '-100%', opacity: 0 }}
-            animate={descriptionInView ? { x: 0, opacity: 1 } : { x: '-100%', opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: 'easeIn' }}
           >
             {dishes[next].description}
@@ -88,8 +88,8 @@ const Mainpage = ({ dishes }) => {
 
         <motion.div
           key={next} // Changing the key on `next` update triggers re-mount and animation reset
-          initial={{ x: '20%', opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          initial={{ scale:(0.1), opacity: 0 }}
+          animate={{ scale:(1),  opacity: 1 }}
           transition={{ duration: 0.5, ease: 'easeIn' }}
         >
           <img src={dishes[next].image} className='h-1/2 sm:h-1/2 md:h-1/2 big-image' />
